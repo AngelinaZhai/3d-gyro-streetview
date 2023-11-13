@@ -19,6 +19,7 @@ public class GyroCamera : MonoBehaviour
         Vector3 gyroInput = -Input.gyro.rotationRateUnbiased;
 
         Vector3 newAngle = previousAngle + gyroInput * Time.deltaTime * Mathf.Rad2Deg;
+        newAngle.x = 0.0f;
         newAngle.z = 0.0f; //anchors the angle to avoid confusion
         transform.eulerAngles = newAngle;
     }
