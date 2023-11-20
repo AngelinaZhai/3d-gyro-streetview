@@ -13,7 +13,7 @@ public class GyroCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Input.gyro.attitude);
+        // Debug.Log(Input.gyro.attitude);
         //read gyroscope input
         Vector3 previousAngle = transform.eulerAngles;
         Vector3 gyroInput = -Input.gyro.rotationRateUnbiased;
