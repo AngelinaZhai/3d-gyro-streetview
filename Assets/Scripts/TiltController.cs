@@ -9,12 +9,13 @@ public class TiltController : MonoBehaviour
     {
         //enable gyroscope in device
         Input.gyro.enabled = true;
+        // Debug.Log("Scene 2 here");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Input.gyro.attitude);
+        // Debug.Log(Input.gyro.attitude);
         //read gyroscope input
         transform.rotation = Input.gyro.attitude; //flipped so that correct directions are read
 
